@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Functional Programming</title>
+</head>
+<body style="background-color:lightgray">
+    <h1>Functional Programming</h1>
+    <h2>Pure function</h2>
+    <pre>
+        function counterReducer(actionType,  counter){
+            if(actionType==='INC'){
+                counter= counter+1;
+                return counter;
+            }
+            if(actionType==='DEC'){
+                counter = counter-1;
+                return counter;
+            }
+        }
+        
+        var x =counterReducer('INC', 0);
+        var y =counterReducer('DEC', 0);
+        console.log('After increment');
+        console.log(x);
+        console.log('After Decrement');
+        console.log(y);
+    </pre>
+
+
+
+    <h3>Check console for output</h3>
+    <script src="./script.js" ></script>
+</body>
+</html>
